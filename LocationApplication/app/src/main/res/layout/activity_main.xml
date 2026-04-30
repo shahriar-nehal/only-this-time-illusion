@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#284066"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HealthSync"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#B6D1FF"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track your daily activity and runs."
+        android:textSize="14sp"
+        android:textColor="#CCE3E6"
+        android:layout_marginBottom="48dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp"
+            android:background="#6B9BCA">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:textColor="#F8F7F7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps Today"
+                android:textSize="16sp"
+                android:textColor="#010809"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/startWorkoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Start Outdoor Run"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2980B9"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Status text (initially hidden) -->
+    <TextView
+        android:id="@+id/trackingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#B2D0B3"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HealthSync requires location access to accurately map your outdoor running routes."
+        android:textSize="12sp"
+        android:textColor="#B3FCFF"
+        android:textAlignment="center"/>
+
+</LinearLayout>
